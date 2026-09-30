@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 # Change this value to train all three models with another reproducible seed.
-SEED = 1214
+SEED = 502
 
 MODEL_ROOT = Path(__file__).resolve().parent
 TM_ROOT = MODEL_ROOT.parent
