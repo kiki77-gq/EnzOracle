@@ -16,7 +16,7 @@ from model_regrest.modelreg import Mymodel_tmreg2
 
 
 
-DEFAULT_SEED = 1214
+DEFAULT_SEED = 502
 DEFAULT_CLS_CKPT = str(TM_ROOT / 'train_model' / f'tmcls_seed{DEFAULT_SEED}' / 'model_best.pt')
 DEFAULT_REG1_CKPT = str(TM_ROOT / 'train_model' / f'tmreg5060_seed{DEFAULT_SEED}' / 'model_best.pt')
 DEFAULT_REG2_CKPT = str(TM_ROOT / 'train_model' / f'tmregrest_seed{DEFAULT_SEED}' / 'model_best.pt')
