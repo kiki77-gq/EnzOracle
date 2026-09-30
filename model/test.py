@@ -37,7 +37,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def seed_everything(seed=1214):
+def seed_everything(seed=502):
    
     random.seed(seed)
     os.environ["PYTHONHASHSEED"] = str(seed)
@@ -159,7 +159,7 @@ def final_test_safe(final_model, test_loader, device):
 #        Main
 # =========================
 def main():
-    seed_everything(1214)
+    seed_everything(502)
     args = parse_args()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -190,7 +190,7 @@ def main():
     df, metrics = final_test_safe(final_model, test_loader, device)
 
     
-    out_csv = os.path.join(args.output_dir, "EnzOracle_1214.csv")
+    out_csv = os.path.join(args.output_dir, "EnzOracle_502.csv")
     df.to_csv(out_csv, index=False)
     print(f"✅ Final prediction saved to: {out_csv}")
 
