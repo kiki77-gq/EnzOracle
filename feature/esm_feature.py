@@ -22,7 +22,7 @@ model.eval()
 
 csv_path = TM_ROOT / 'data' / 'Tm.csv'
 
-output_directory = TM_ROOT / 'embedding1'
+output_directory = TM_ROOT / 'embedding'
 
 os.makedirs(output_directory, exist_ok=True)
 
