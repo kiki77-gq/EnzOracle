@@ -16,7 +16,7 @@ from model_regrest.modelreg import Mymodel_toptreg2
 
 
 
-DEFAULT_SEED = 1214
+DEFAULT_SEED = 502
 DEFAULT_CLS_CKPT = str(TOPT_ROOT / 'train_model' / f'toptcls_seed{DEFAULT_SEED}' / 'model_best.pt')
 DEFAULT_REG1_CKPT = str(TOPT_ROOT / 'train_model' / f'toptreg2040_seed{DEFAULT_SEED}' / 'model_best.pt')
 DEFAULT_REG2_CKPT = str(TOPT_ROOT / 'train_model' / f'toptregrest_seed{DEFAULT_SEED}' / 'model_best.pt')
