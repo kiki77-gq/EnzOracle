@@ -15,6 +15,8 @@ EMBEDDING_DIR = TOPT_ROOT / 'embedding'
 TRAIN_OUTPUT_ROOT = TOPT_ROOT / 'train_model'
 
 TRAINING_JOBS = (
+    (MODEL_ROOT / 'model_cls' / 'traincls.py', DATA_ROOT / 'Topt.csv'),
+    (MODEL_ROOT / 'model_reg2040' / 'trainreg.py', DATA_ROOT / 'topt_20_40.csv'),
     (MODEL_ROOT / 'model_regrest' / 'trainreg.py', DATA_ROOT / 'topt_rest.csv'),
 )
 
