@@ -35,14 +35,14 @@ def parse_args():
     parser.add_argument('--seq_max_len', default=1024, type=int, help="Maximum length for sequence padding")
     parser.add_argument('--batch_size', default=16, type=int, help="Batch size for testing")
     
-    parser.add_argument('--cls_dir', type=str, default=str(topt_root / 'train_model' / 'toptcls_seed1214'))
-    parser.add_argument('--reg1_dir', type=str, default=str(topt_root / 'train_model' / 'toptreg2040_seed1214'))
-    parser.add_argument('--reg2_dir', type=str, default=str(topt_root / 'train_model' / 'toptregrest_seed1214'))
+    parser.add_argument('--cls_dir', type=str, default=str(topt_root / 'train_model' / 'toptcls_seed502'))
+    parser.add_argument('--reg1_dir', type=str, default=str(topt_root / 'train_model' / 'toptreg2040_seed502'))
+    parser.add_argument('--reg2_dir', type=str, default=str(topt_root / 'train_model' / 'toptregrest_seed502'))
 
     return parser.parse_args()
 
 
-def seed_everything(seed=1214):
+def seed_everything(seed=502):
    
     random.seed(seed)
     os.environ["PYTHONHASHSEED"] = str(seed)
@@ -210,7 +210,7 @@ def evaluate_model(final_model, data_loader, device):
 #        Main
 # =========================
 def main():
-    seed_everything(1214)
+    seed_everything(502)
     args = parse_args()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -249,7 +249,7 @@ def main():
     
     
     
-    out_csv = os.path.join(args.output_dir, "grid_search_validation_results_seed1214.csv")
+    out_csv = os.path.join(args.output_dir, "grid_search_validation_results_seed502.csv")
     with open(out_csv, 'w') as f:
         f.write(
             "cls_epoch,reg1_epoch,reg2_epoch,"
