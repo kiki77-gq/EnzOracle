@@ -1,4 +1,4 @@
-# EnzOracle-pHopt
+# EnzOracle-Tm
 
 ## Folder Structure
 
