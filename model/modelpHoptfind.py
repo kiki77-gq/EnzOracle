@@ -16,7 +16,7 @@ from model_regrest.modelreg import Mymodel_phreg2
 
 
 
-DEFAULT_SEED = 1214
+DEFAULT_SEED = 502
 DEFAULT_CLS_CKPT = str(PHOPT_ROOT / 'train_model' / f'phcls_seed{DEFAULT_SEED}' / 'model_best.pt')
 DEFAULT_REG1_CKPT = str(PHOPT_ROOT / 'train_model' / f'phreg78_seed{DEFAULT_SEED}' / 'model_best.pt')
 DEFAULT_REG2_CKPT = str(PHOPT_ROOT / 'train_model' / f'phregrest_seed{DEFAULT_SEED}' / 'model_best.pt')
