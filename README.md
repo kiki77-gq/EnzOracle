@@ -8,7 +8,7 @@ EnzOracle is a classification-guided mixture-of-experts framework for predicting
 
 The repository contains three task-specific implementation branches.  Each branch has its own complete README with data, training, evaluation, and prediction details.
 
-| Branch | Predicted property | Classification-guided expert design | Detailed documentation |
+| Branch | Predicted property | Detailed documentation |
 | --- | --- | --- | --- |
 | [`Tm`](https://github.com/kiki77-gq/EnzOracle/tree/Tm) | Melting temperature (`Tm`)| [`Tm` README](https://github.com/kiki77-gq/EnzOracle/blob/Tm/README.md) |
 | [`Topt`](https://github.com/kiki77-gq/EnzOracle/tree/Topt) | Optimum temperature (`Topt`) | [`Topt` README](https://github.com/kiki77-gq/EnzOracle/blob/Topt/README.md) |
